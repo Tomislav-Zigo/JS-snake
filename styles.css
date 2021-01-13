@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Console', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color:rgb(39, 39, 39);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    background-color:rgb(58, 58, 58);
+    margin:20px;
+    width:500px;
+    padding:20px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.score{
+    font-size: x-large;
+    color:rgb(20, 20, 20);
+    line-height: 350%;
+    width:150px;
+    text-align:end;
+
+}
+
+.title{
+    font-size: x-large;
+    color:rgb(20, 20, 20);
+    line-height: 350%;
+    width:150px;
+}
+
+.game-area{
+    background-color:rgb(58, 58, 58);
+    margin:20px;
+    height:500px;
+    width:500px;
+    position: relative;
+}
+
+.settings{
+    background-color:rgb(58, 58, 58);
+    margin:20px;
+    width:500px;
+    padding:20px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.snake-piece{
+    box-sizing:content-box;
+    height:50px;
+    width:50px;
+    position: absolute;
+    background-color:rgb(118, 201, 70);
+
+}
+
+.food-piece{
+    position: absolute;
+    background-color:rgb(216, 79, 79);
+    height:50px;
+    width:50px;
+    border-radius: 25px;
+}
+
+.game-over{
+    position:absolute;
+    width:500px;
+    height:500px;
+    padding-top: 240px;
+    background-color:rgba(39, 39, 39,.5);
+    color:white;
+    text-align: center;
+}
+
+.difficulty{
+    position:relative;
+    height:50px;
+    width:100px;
+    float:none
+}
+
+#difficulty-icon{
+    margin-top: 5px;
+    margin-left: 27px;
+    width:40px;
+    height:40px;
+}
+
+.speed{
+    position:relative;
+    height:50px;
+    width:100px;
+    float:none
+}
+
+#speed-icon{
+    margin-top: 5px;
+    margin-left: 27px;
+    width:40px;
+    height:40px;
+}
+
+@media(max-height:800px){
+    
+    .header{
+        background-color:rgb(58, 58, 58);
+        margin:20px;
+        width:400px;
+        padding:10px;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .settings{
+        background-color:rgb(58, 58, 58);
+        margin:20px;
+        width:400px;
+        padding:10px;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .game-area{
+        background-color:rgb(58, 58, 58);
+        margin:20px;
+        height:400px;
+        width:400px;
+        position: relative;
+    }
+
+    .snake-piece{
+        box-sizing:content-box;
+        height:40px;
+        width:40px;
+        position: absolute;
+        background-color:rgb(118, 201, 70);
+    
+    }
+    
+    .food-piece{
+        position: absolute;
+        background-color:rgb(216, 79, 79);
+        height:40px;
+        width:40px;
+        border-radius: 25px;
+    }
+
+    .game-over{
+        position:absolute;
+        width:400px;
+        height:400px;
+        padding-top: 190px;
+        background-color:rgba(39, 39, 39,.5);
+        color:white;
+        text-align: center;
+    }
+}
+
+@media(max-height:600px){
+
+    .settings{
+        display: none;
+    }
+
+}
+
+
+
